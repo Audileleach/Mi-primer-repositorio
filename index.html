@@ -4,32 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Portafolio</title>
 </head>
 <body>
-    <div>
-      <h1 style="text-align: center; color: cadetblue; font-size: 40px;">Portafolio</h1>  
-      <h2 style="text-align: center; color: cadetblue; font-size: 20px;">Fundamentos de programaciòn web</h2>
-      <h3 style="text-align: center; color: cadetblue; font-size: 15px;">Gustavo Alexander Fuentes Marin</h3>
-    </div>
+   <main class="main">
+     <section class="lado_izq">
+      <header class="header">
+        <h1 class="titulo">programacion <br>web </h1>  
+        <h2 class="subtitulo">Fundamentos de programaciòn web</h2>
+        <h3 style="text-align: center; color: cadetblue; font-size: 15px;">Gustavo Alexander Fuentes Marin</h3>
+      </header> 
+     </section>
 
-    <div>
-      <h3>Mis paginas web</h3>  
-      <div>
-        <!--lo siguiente es una lista ordenada-->  
-        <ol>
-          <li>
-            <a href="./Paginas/pagina.html">ir a la pagina 1</a>
-          </li>
-          <li>elemento 2</li>  
-        </ol>
-        <!--lo siguiente es una lista no ordenada-->
-        <ul style="list-style: none;">
-          <li>elemento 1</li>
-          <li>elemento 2</li>  
-        </ul>
 
+    <section class="lado_der">
+      <div class="contenedor">
+        <details class="details">
+          <summary>html</summary>
+                <!--lo siguiente es una lista ordenada-->  
+            <ol>
+              <li>
+                <a style="font-size: 25px;" href="./Paginas/pagina.html">ir a la pagina 1</a>
+              </li>
+              <li>
+                <a style="font-size: 25px;" href="·">ir a la pagina 2</a>  
+              </li>  
+            </ol>
+        </details>   
+            <!--lo siguiente es una lista no ordenada-->
+         <details class="details">   
+            <summary>css</summary>
+            <ul>
+              <li style="font-size: 25px;">elemento 1</li>
+              <li style="font-size: 25px;">elemento 2</li>  
+            </ul>
+        </details>
       </div>
-    </div>
+    </section>
+   </main>
 </body>
 </html>

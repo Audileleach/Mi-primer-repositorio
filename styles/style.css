@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+.main{
+  display: flex;  
+}
+
+.lado_izq{
+  width: 50vw;
+  background-color: crimson;
+  height: 100vw;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.titulo{
+  font-size: 80px;
+  text-align: center;  
+}
+
+.subtitulo{
+  font-size: 40px;
+  text-align: center;
+}
+
+.lado_der{
+  width: 50vw;  
+  height: 100vh;
+}
+
+.details{
+  font-size: 50px;
+}
+
+ol{
+  list-style: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.contenedor{
+  margin-top: 30%;
+}
