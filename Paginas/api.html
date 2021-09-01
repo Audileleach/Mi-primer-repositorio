@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    
+
+   <script>
+      const datos = {
+           //llave      valor
+           "nombre": "Gustavo",
+           "apellido": "Fuentes",
+           "colores": ['red','blue'],
+           "numeros":{
+              "num1": 1,
+              "num2": 2 ,
+              "num3":{
+                  "num4": 4
+              }
+           }
+      }
+
+      //console.log(datos.nombre); 
+      //console.log(datos.colores[1]);
+      //console.log(datos.numeros.num3.num4);
+
+      const url = "https://pokeapi.co/api/v2/pokemon/32";
+      fetch(url).then( (respuesta)=>{
+         return respuesta.json(); 
+      }).then((datos)=>{
+
+        let titulo = document.querySelector('#titulo')
+        titulo.innerHTML = datos.name;
+
+      }).catch(()=>{
+          alert("algo salió mal")
+      });
+
+
+
+   </script>
+
+
+</body>
+</html>

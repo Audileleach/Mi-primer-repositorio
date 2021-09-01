@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    <h1>Funciones JS</h1>
+    <button onclick="ShowAlert()">click me</button>
+    <button value="blue" onclick="changeColor(value)">Blue</button>
+    <button value="red" onclick="changeColor(value)">red</button>
+    <button value="#45DE35" onclick="changeColor(value)">Green</button>
+
+
+    <script>
+       const changeColor = ( color )=>{
+           document.body.style.backgroundColor = color;
+       }
+
+
+
+    //declarar nuestra función
+    function saludar(){
+       //codigo
+       console.log("Hola");
+    }
+    //funciones que retornan algo
+    const saludar2 = (nombre, años, estado) =>{
+       return `Hola mi nombre es ${nombre}, tengo ${años} años y soy de ${estado}`; 
+    }
+    console.log(saludar2("Gustavo", 16, "Mexico"));
+    //console.log( saludar2() );
+
+    const suma = ( num1, num2 ) =>{
+        return num1 + num2
+    }
+    let resultadoSuma = suma( 10, 5 );
+    console.log( resultadoSuma);
+
+
+    //Funciones de flecha
+    const despedida = () =>{
+        console.log("adios");
+    }
+
+    const ShowAlert = () =>{
+       alert("Me clickeaste!"); 
+    }        
+    //funcion para parametro
+    const cocinar = ( gato ) =>{
+      console.log( "Hoy estoy cocinando " + gato);  
+    }
+
+    //       CREAR          PARAMETROS 
+    const saludarAmigo = ( saludo, amigo) =>{
+      console.log( saludo, amigo);  
+    }
+
+
+
+
+    //llamar a la función
+/*     saludar();
+    despedida(); */
+/*     cocinar("pizza");
+    cocinar("hamburguesa");
+ */
+   const despedidaAmigo = ( despedida="Hasta luego", amigo="Chabelo") =>{
+     console.log( despedida, amigo);  
+     return 
+}
+    //   LLAMAR          ARGUMENTOS
+    //saludarAmigo( "Buenos dias", "Denisse" );
+    despedidaAmigo();
+    despedidaAmigo("Adios","Bombón");
+
+    </script>
+    
+</body>
+</html>
