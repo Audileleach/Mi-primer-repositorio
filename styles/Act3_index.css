@@ -2,20 +2,18 @@
     background-color: crimson;
     width: 100%;
 }
- .ovalado{
-     border-radius: 50%;
-     border: none;   
- }
 
  nav{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
  }
 
  button{
      background-color: darkseagreen;
      margin-right: 70px;
      margin-left: 70px;
+     border-radius: 50%;
+     border: none;   
  }
  
  button:hover{
@@ -25,4 +23,100 @@
 #img_pokemon{
     width: 200px;
     height: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    .nav{
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    button{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80px;
+    }
+
+    .item_menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .item{
+        width: 90%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header{
+        padding: 0%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 505px){
+    .item{
+        width: 70%;
+    }
+
+    nav{
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .item{
+        width: 70%;
+    }
+
+    nav{
+        height: 75px;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 980px){
+    .item{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1040px){
+    .header{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .item{
+        width: 22%;
+    }
+
+    .header{
+        padding-bottom: 0%;
+        padding-top: 0%;
+        padding-left: 60%;
+        padding-right: 60%;
+    }
+
+    main{
+        padding-bottom: 20%;
+        padding-top: 20%;
+        padding-left: 50%;
+        padding-right: 50%;
+    }
 }
