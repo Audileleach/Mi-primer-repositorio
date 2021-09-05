@@ -1,0 +1,28 @@
+.pt_arriba{
+    background-color: crimson;
+    width: 100%;
+}
+ .ovalado{
+     border-radius: 50%;
+     border: none;   
+ }
+
+ nav{
+    display: flex;
+    justify-content: center;
+ }
+
+ button{
+     background-color: darkseagreen;
+     margin-right: 70px;
+     margin-left: 70px;
+ }
+ 
+ button:hover{
+     color: gold;
+ }
+
+#img_pokemon{
+    width: 200px;
+    height: 200px;
+}
