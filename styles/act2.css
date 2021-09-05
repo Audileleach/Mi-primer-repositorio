@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#header{
+   font-size: 25px;    
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+p{
+    font-size: 30px;    
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.p1{
+    font-family: 'Glory', sans-serif;
+}
+
+.p2{
+    font-family: 'Merriweather', serif;
+}
+
+.p3{
+    font-family: 'Raleway', sans-serif;
+}
