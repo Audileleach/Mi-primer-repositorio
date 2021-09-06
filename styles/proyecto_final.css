@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+  }
+
+#header{
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+}
+
+#main{
+    display: flex;
+}
+
+#lado_izq{
+    width: 50vw;
+    float: left;
+    height: 70vh;
+    background-color: darkcyan;
+}
+
+#img_pokemon{
+    width: 10vw;
+    display: block;
+    margin: auto;
+}
+
+#txt_izq{
+    text-align: center;
+}
+
+#lado_der{
+    width: 50vw;
+    height: 70vh;
+    float: right;    
+    background-color: darkolivegreen;
+}
+
+#txt_der{
+    text-align: left;
+    font-size: 25px;
+    margin-top: 126px;
+}
+
+#nombre_pkm{
+    text-align: center;
+    font-size: 150px;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    height: 10vh;
+    background-color: crimson;
+}
+

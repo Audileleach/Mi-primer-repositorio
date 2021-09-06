@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="stylesheet" href="../styles/proyecto_final.css">
+</head>
+<body>
+   <header id="header" style="background-color: crimson;">
+       <h1>Proyecto final: Pokeapi</h1>
+   </header> 
+   <main id="main">
+       <section id="lado_izq">     
+               <img id="img_pokemon" src="../src/logo_pokedex.png" alt="pokemon">
+               <div id="txt_izq">
+                  <h2 style="margin-top: opx; font-size: 25px;">Nombre:</h2>
+                  <p style="margin-top: 30px; font-size: 25px;">Tipo:</p>
+                  <p style="margin-top: 30px; font-size: 25px;">Altura:</p>
+                  <p style="margin-top: 30px; font-size: 25px;">Peso:</p>
+               </div>
+       </section>
+       <section id="lado_der">
+           <div id="txt_der">
+               <p id="nombre" style="margin-top: 30px;">si ves esto no funcionó</p>
+               <p id="tipo" style="margin-top: 30px;">si ves esto no funcionó</p>
+               <p id="altura" style="margin-top: 30px;">si ves esto no funcionó</p>
+               <p id="peso" style="margin-top: 30px;">si ves esto no funcionó/p>
+           </div>
+       </section>
+   </main>
+   <footer id="footer" style="text-align: left;"></footer>
+   <script>
+       var num_pkm = prompt("para empezar elige el numero de un pokemon del 1 al 10 al que desees saber sus datos", "")
+
+       if (num_pkm == "1"){
+          var url = "https://pokeapi.co/api/v2/pokemon/1"
+       } else if (num_pkm == "2"){
+          var url = "https://pokeapi.co/api/v2/pokemon/2"
+       } else if (num_pkm == "3"){
+           var url = "https://pokeapi.co/api/v2/pokemon/3"
+       } else if (num_pkm == "4"){
+           var url = "https://pokeapi.co/api/v2/pokemon/4"
+       } else if (num_pkm == "5"){
+           var url = "https://pokeapi.co/api/v2/pokemon/5"
+       } else if (num_pkm == "6"){
+           var url = "https://pokeapi.co/api/v2/pokemon/6"
+       } else if (num_pkm == "7"){
+           var url = "https://pokeapi.co/api/v2/pokemon/7"
+       } else if (num_pkm == "8"){
+           var url = "https://pokeapi.co/api/v2/pokemon/8"
+       } else if (num_pkm == "9"){
+           var url = "https://pokeapi.co/api/v2/pokemon/9"
+       } else {
+           var url = "https://pokeapi.co/api/v2/pokemon/10"
+       }
+
+       fetch(url).then( (respuesta)=>{
+         return respuesta.json(); 
+      }).then((datos)=>{
+
+        let nombre = document.querySelector('#nombre')
+        nombre.innerHTML = datos.name;
+
+      }).catch(()=>{
+          alert("algo salió mal")
+      });
+
+
+      fetch(url).then( (respuesta)=>{
+         return respuesta.json(); 
+      }).then((datos)=>{
+
+        let tipo = document.querySelector('#tipo')
+        tipo.innerHTML = datos.types[0].type.name;
+
+      }).catch(()=>{
+          alert("algo salió mal")
+      });
+
+
+      fetch(url).then( (respuesta)=>{
+         return respuesta.json(); 
+      }).then((datos)=>{
+
+        let altura = document.querySelector('#altura')
+        altura.innerHTML = datos.height;
+
+      }).catch(()=>{
+          alert("algo salió mal")
+      });
+
+
+      fetch(url).then( (respuesta)=>{
+         return respuesta.json(); 
+      }).then((datos)=>{
+
+        let peso = document.querySelector('#peso')
+        peso.innerHTML = datos.weight;
+
+      }).catch(()=>{
+          alert("algo salió mal")
+      });
+   </script>
+</body>
+</html>
